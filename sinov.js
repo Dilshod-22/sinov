@@ -14,7 +14,7 @@ router.use(passport.session());
 passport.use(new FacebookStrategy({
   clientID:"882795876258789",
   clientSecret:"bff74cea5dda14cb56b788acfbd50eab",
-  callbackURL:"http://localhost:8000/auth/facebook/callback",
+  callbackURL:"https://bmi-uchun.onrender.com/auth/facebook/callback",
   profileFields:['id','displayName','name','gender','picture.type(large)','email']
 },
 function(token,refreshToken,profile,done){
